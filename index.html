@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextGrowth — We Don't Manage Pages. We Grow Revenue.</title>
+<meta name="description" content="NextGrowth is Cairo's premier growth-focused marketing agency. Scale your business with smart paid ads, affiliate systems, and social media strategies that generate real revenue.">
+<meta property="og:title" content="NextGrowth — We Don't Manage Pages. We Grow Revenue.">
+<meta property="og:description" content="Cairo-based marketing agency helping businesses scale with paid ads, affiliate systems, and data-driven growth strategies.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_EG">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MarketingAgency","name":"NextGrowth","url":"https://nextgrowth.agency","address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"},"telephone":"+201142070183","description":"Cairo-based growth-focused marketing agency specializing in paid advertising, social media, and affiliate marketing systems."}
+</script>
+<style>
+:root {
+  --g: #22c55e;
+  --gd: #16a34a;
+  --glight: #4ade80;
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --bg3: #1a1a1a;
+  --bg4: #222222;
+  --text: #f0f0f0;
+  --text2: #a0a0a0;
+  --text3: #666;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.12);
+  --card: #141414;
+  --card2: #1c1c1c;
+  --shadow: 0 4px 40px rgba(0,0,0,0.4);
+  --radius: 16px;
+  --radius-sm: 8px;
+  --ff: 'Syne', sans-serif;
+  --fb: 'DM Sans', sans-serif;
+  --fa: 'Cairo', sans-serif;
+  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+[data-theme="light"] {
+  --bg: #fafafa;
+  --bg2: #f4f4f4;
+  --bg3: #eeeeee;
+  --bg4: #e5e5e5;
+  --text: #0a0a0a;
+  --text2: #555;
+  --text3: #999;
+  --border: rgba(0,0,0,0.06);
+  --border2: rgba(0,0,0,0.12);
+  --card: #ffffff;
+  --card2: #f8f8f8;
+  --shadow: 0 4px 40px rgba(0,0,0,0.08);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--bg);color:var(--text);font-family:var(--fb);line-height:1.6;overflow-x:hidden;transition:background var(--transition),color var(--transition)}
+body.ar{font-family:var(--fa)}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--g);border-radius:4px}
+
+/* SCROLL PROGRESS */
+#scroll-progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--g),var(--glight));z-index:9999;width:0%;transition:width 0.1s}
+
+/* WHATSAPP FLOAT */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:999;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform var(--transition),box-shadow var(--transition);animation:pulse-wa 2.5s infinite}
+body.ar .wa-float{right:auto;left:28px}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(37,211,102,0.6)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+@keyframes pulse-wa{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 32px rgba(37,211,102,0.7)}}
+
+/* NAVBAR */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 5%;height:70px;display:flex;align-items:center;justify-content:space-between;transition:background var(--transition),backdrop-filter var(--transition),border-color var(--transition);border-bottom:1px solid transparent}
+nav.scrolled{background:rgba(10,10,10,0.85);backdrop-filter:blur(20px);border-bottom-color:var(--border)}
+[data-theme="light"] nav.scrolled{background:rgba(250,250,250,0.9)}
+.nav-logo{font-family:var(--ff);font-size:1.5rem;font-weight:800;letter-spacing:-0.02em}
+.nav-logo span{color:var(--g)}
+.nav-controls{display:flex;align-items:center;gap:12px}
+.nav-btn{padding:10px 22px;border-radius:100px;font-size:0.875rem;font-weight:500;transition:all var(--transition)}
+.nav-btn-primary{background:var(--g);color:#000;font-weight:600}
+.nav-btn-primary:hover{background:var(--glight);transform:translateY(-1px)}
+.nav-btn-ghost{border:1px solid var(--border2);color:var(--text2);padding:8px 16px;border-radius:100px;font-size:0.8125rem}
+.nav-btn-ghost:hover{border-color:var(--g);color:var(--g)}
+.theme-toggle{width:36px;height:36px;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;color:var(--text2);transition:all var(--transition);font-size:1.1rem}
+.theme-toggle:hover{border-color:var(--g);color:var(--g)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(120px);opacity:0.15;animation:drift 8s ease-in-out infinite alternate}
+.orb1{width:600px;height:600px;background:var(--g);top:-200px;left:-100px}
+.orb2{width:400px;height:400px;background:#10b981;bottom:-100px;right:-50px;animation-delay:-4s}
+.hero-content{position:relative;z-index:1;max-width:860px}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;border:1px solid rgba(34,197,94,0.3);background:rgba(34,197,94,0.06);color:var(--g);font-size:0.8125rem;font-weight:500;margin-bottom:28px;animation:fadeUp 0.6s ease both}
+.hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--g);animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-family:var(--ff);font-size:clamp(2.5rem,7vw,5.5rem);font-weight:800;line-height:1.05;letter-spacing:-0.03em;margin-bottom:24px;animation:fadeUp 0.6s 0.1s ease both}
+.hero h1 em{font-style:normal;color:var(--g)}
+.hero-sub{font-size:clamp(1rem,2.5vw,1.25rem);color:var(--text2);max-width:580px;margin:0 auto 40px;line-height:1.7;animation:fadeUp 0.6s 0.2s ease both}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;animation:fadeUp 0.6s 0.3s ease both}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:100px;background:var(--g);color:#000;font-weight:600;font-size:0.9375rem;transition:all var(--transition)}
+.btn-primary:hover{background:var(--glight);transform:translateY(-2px);box-shadow:0 8px 30px rgba(34,197,94,0.3)}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:100px;border:1px solid var(--border2);color:var(--text);font-size:0.9375rem;transition:all var(--transition)}
+.btn-wa:hover{border-color:#25d366;color:#25d366;transform:translateY(-2px)}
+.hero-stats{display:flex;gap:0;justify-content:center;margin-top:64px;border-top:1px solid var(--border);padding-top:40px;width:100%;max-width:700px;margin-left:auto;margin-right:auto;animation:fadeUp 0.6s 0.4s ease both}
+.hero-stat{flex:1;padding:0 24px;text-align:center}
+.hero-stat+.hero-stat{border-left:1px solid var(--border)}
+.stat-num{font-family:var(--ff);font-size:2.5rem;font-weight:800;color:var(--g);line-height:1;margin-bottom:6px}
+.stat-label{font-size:0.8125rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.08em}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(40px,30px) scale(1.1)}}
+
+/* SECTIONS */
+section{padding:100px 5%}
+.section-label{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--g);margin-bottom:16px}
+.section-label::before{content:'';display:block;width:20px;height:2px;background:var(--g)}
+h2.section-title{font-family:var(--ff);font-size:clamp(2rem,5vw,3.25rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px}
+.section-desc{color:var(--text2);font-size:1.0625rem;max-width:520px;line-height:1.7}
+.section-head{margin-bottom:64px}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.pill{padding:6px 14px;border-radius:100px;font-size:0.8125rem;border:1px solid var(--border2);color:var(--text2)}
+.pill.active{border-color:var(--g);color:var(--g);background:rgba(34,197,94,0.06)}
+.about-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.about-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.about-card-icon{width:44px;height:44px;border-radius:12px;background:rgba(34,197,94,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.25rem}
+.about-card h4{font-family:var(--ff);font-size:1rem;font-weight:700;margin-bottom:8px}
+.about-card p{font-size:0.875rem;color:var(--text2);line-height:1.6}
+
+/* SERVICES */
+.services-bg{background:var(--bg2)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.service-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:all var(--transition);position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(34,197,94,0.05),transparent);opacity:0;transition:opacity var(--transition)}
+.service-card:hover{border-color:rgba(34,197,94,0.3);transform:translateY(-4px);box-shadow:var(--shadow)}
+.service-card:hover::before{opacity:1}
+.service-icon{width:52px;height:52px;border-radius:14px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px}
+.service-card h3{font-family:var(--ff);font-size:1.25rem;font-weight:700;margin-bottom:12px}
+.service-card p{font-size:0.9rem;color:var(--text2);margin-bottom:20px;line-height:1.65}
+.service-benefits{list-style:none;margin-bottom:24px}
+.service-benefits li{font-size:0.85rem;color:var(--text2);padding:4px 0;display:flex;align-items:center;gap:8px}
+.service-benefits li::before{content:'✓';color:var(--g);font-weight:700;font-size:0.75rem}
+.btn-outline{display:inline-flex;align-items:center;gap:6px;font-size:0.875rem;font-weight:500;color:var(--g);padding:8px 0;border-bottom:1px solid rgba(34,197,94,0.3);transition:gap var(--transition)}
+.btn-outline:hover{gap:10px}
+
+/* CASE STUDIES */
+.cases-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.case-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all var(--transition)}
+.case-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--border2)}
+.case-header{padding:28px 28px 20px;border-bottom:1px solid var(--border)}
+.case-tag{display:inline-flex;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;margin-bottom:12px}
+.case-tag.restaurant{background:rgba(251,146,60,0.1);color:#fb923c}
+.case-tag.ecom{background:rgba(99,102,241,0.1);color:#818cf8}
+.case-tag.clinic{background:rgba(34,197,94,0.1);color:var(--g)}
+.case-header h3{font-family:var(--ff);font-size:1.1875rem;font-weight:700;margin-bottom:6px}
+.case-header p{font-size:0.875rem;color:var(--text2)}
+.case-metrics{padding:24px 28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.case-metric label{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text3);display:block;margin-bottom:4px}
+.case-metric .val{font-family:var(--ff);font-size:1.75rem;font-weight:800;color:var(--g);line-height:1}
+.case-metric .desc{font-size:0.8rem;color:var(--text2);margin-top:4px}
+.case-bar{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden;margin-top:8px}
+.case-bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--g),var(--glight));width:0;transition:width 1.2s cubic-bezier(0.4,0,0.2,1)}
+
+/* PRICING */
+.pricing-bg{background:var(--bg2)}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto}
+.pricing-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:36px;transition:all var(--transition);position:relative}
+.pricing-card.featured{border-color:var(--g);background:linear-gradient(135deg,rgba(34,197,94,0.06),var(--card))}
+.pricing-card.featured::before{content:'Most Popular';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--g);color:#000;font-size:0.75rem;font-weight:700;padding:4px 16px;border-radius:100px;white-space:nowrap}
+.pricing-badge{display:inline-flex;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;margin-bottom:16px;background:rgba(34,197,94,0.08);color:var(--g)}
+.pricing-card h3{font-family:var(--ff);font-size:1.375rem;font-weight:700;margin-bottom:24px}
+.pricing-price{font-family:var(--ff);font-size:2.5rem;font-weight:800;line-height:1;margin-bottom:4px}
+.pricing-price span{font-size:1rem;font-weight:400;color:var(--text2);font-family:var(--fb)}
+.pricing-period{font-size:0.875rem;color:var(--text3);margin-bottom:28px}
+.pricing-features{list-style:none;margin-bottom:32px}
+.pricing-features li{font-size:0.9rem;color:var(--text2);padding:8px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.pricing-features li:last-child{border-bottom:none}
+.pricing-features li .check{color:var(--g);font-size:0.875rem}
+.btn-pricing{width:100%;padding:13px;border-radius:100px;font-weight:600;font-size:0.9375rem;transition:all var(--transition);text-align:center}
+.btn-pricing-primary{background:var(--g);color:#000}
+.btn-pricing-primary:hover{background:var(--glight);transform:translateY(-1px)}
+.btn-pricing-outline{border:1px solid var(--border2);color:var(--text)}
+.btn-pricing-outline:hover{border-color:var(--g);color:var(--g)}
+
+/* AFFILIATE */
+.affiliate-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;position:relative;margin-top:48px}
+.affiliate-steps::before{content:'';position:absolute;top:40px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--g),rgba(34,197,94,0.1));z-index:0}
+.aff-step{text-align:center;padding:40px 24px;position:relative;z-index:1}
+.aff-step-num{width:60px;height:60px;border-radius:50%;background:var(--g);color:#000;font-family:var(--ff);font-size:1.25rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.aff-step h4{font-family:var(--ff);font-size:1.0625rem;font-weight:700;margin-bottom:10px}
+.aff-step p{font-size:0.875rem;color:var(--text2);line-height:1.6}
+
+/* DASHBOARD */
+.dashboard-bg{background:var(--bg2)}
+.dashboard-preview{background:var(--card);border:1px solid var(--border);border-radius:24px;overflow:hidden;max-width:900px;margin:0 auto}
+.db-header{background:var(--bg3);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;gap:8px}
+.db-dot{width:12px;height:12px;border-radius:50%}
+.db-body{padding:28px}
+.db-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.db-metric{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px}
+.db-metric label{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text3);display:block;margin-bottom:8px}
+.db-metric .db-val{font-family:var(--ff);font-size:1.625rem;font-weight:800;line-height:1}
+.db-metric .db-change{font-size:0.75rem;margin-top:6px;color:var(--g)}
+.db-charts{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.db-chart-box{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px;height:180px;position:relative;overflow:hidden}
+.db-chart-title{font-size:0.8125rem;font-weight:600;margin-bottom:16px;color:var(--text2)}
+.db-bars{display:flex;align-items:flex-end;gap:6px;height:120px}
+.db-bar{flex:1;background:linear-gradient(0deg,var(--g),rgba(34,197,94,0.3));border-radius:4px 4px 0 0;transition:height 1s ease}
+.db-donut{width:100px;height:100px;border-radius:50%;background:conic-gradient(var(--g) 0% 68%,rgba(34,197,94,0.15) 68% 88%,rgba(34,197,94,0.08) 88%);position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center}
+.db-donut::after{content:'68%';width:68px;height:68px;border-radius:50%;background:var(--bg2);position:absolute;display:flex;align-items:center;justify-content:center;font-family:var(--ff);font-size:0.875rem;font-weight:700;color:var(--g)}
+
+/* TESTIMONIALS */
+.testimonials-slider{overflow:hidden;position:relative;margin:0 -20px}
+.testimonials-track{display:flex;gap:20px;padding:0 20px;animation:slide 25s linear infinite}
+.testimonials-track:hover{animation-play-state:paused}
+.testimonial-card{flex:0 0 380px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px}
+.testimonial-stars{color:var(--g);font-size:0.875rem;margin-bottom:16px;letter-spacing:2px}
+.testimonial-text{font-size:0.9375rem;color:var(--text2);line-height:1.7;margin-bottom:24px;font-style:italic}
+.testimonial-author{display:flex;align-items:center;gap:14px}
+.testimonial-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.875rem;color:#000}
+.testimonial-name{font-weight:600;font-size:0.9375rem;margin-bottom:2px}
+.testimonial-role{font-size:0.8125rem;color:var(--text3)}
+@keyframes slide{0%{transform:translateX(0)}100%{transform:translateX(calc(-380px * 3 - 60px))}}
+
+/* FAQ */
+.faq-bg{background:var(--bg2)}
+.faq-grid{max-width:780px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border);overflow:hidden}
+.faq-question{width:100%;text-align:left;padding:22px 0;display:flex;justify-content:space-between;align-items:center;font-size:1.0625rem;font-weight:500;gap:16px;transition:color var(--transition)}
+.faq-question:hover{color:var(--g)}
+.faq-icon{width:28px;height:28px;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;transition:all var(--transition);color:var(--text3)}
+.faq-item.open .faq-icon{background:var(--g);border-color:var(--g);color:#000;transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.35s cubic-bezier(0.4,0,0.2,1)}
+.faq-item.open .faq-answer{max-height:300px}
+.faq-answer p{padding-bottom:22px;font-size:0.9375rem;color:var(--text2);line-height:1.7}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start}
+.contact-info h3{font-family:var(--ff);font-size:1.875rem;font-weight:700;margin-bottom:16px}
+.contact-info p{color:var(--text2);line-height:1.7;margin-bottom:32px}
+.contact-links{display:flex;flex-direction:column;gap:14px}
+.contact-link{display:flex;align-items:center;gap:12px;font-size:0.9375rem;transition:color var(--transition)}
+.contact-link:hover{color:var(--g)}
+.contact-link-icon{width:40px;height:40px;border-radius:10px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.contact-form{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:40px}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:0.875rem;font-weight:500;margin-bottom:8px;color:var(--text2)}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 16px;border-radius:10px;border:1px solid var(--border2);background:var(--bg2);color:var(--text);font:inherit;font-size:0.9375rem;transition:border-color var(--transition);resize:none}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--g)}
+.form-group textarea{height:120px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.btn-submit{width:100%;padding:14px;border-radius:100px;background:var(--g);color:#000;font-weight:700;font-size:1rem;transition:all var(--transition)}
+.btn-submit:hover{background:var(--glight);transform:translateY(-2px)}
+
+/* FOOTER */
+footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 5% 28px}
+.footer-main{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand p{color:var(--text2);font-size:0.9rem;line-height:1.7;margin-top:12px;max-width:280px}
+.footer-col h4{font-family:var(--ff);font-size:1rem;font-weight:700;margin-bottom:16px}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{font-size:0.9rem;color:var(--text2);transition:color var(--transition)}
+.footer-col ul li a:hover{color:var(--g)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:0.875rem;color:var(--text3)}
+.footer-socials{display:flex;gap:10px}
+.social-link{width:36px;height:36px;border-radius:8px;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:var(--text3);transition:all var(--transition)}
+.social-link:hover{border-color:var(--g);color:var(--g)}
+
+/* INTERSECTION OBSERVER ANIMATIONS */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:0.1s}
+.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}
+.reveal-delay-4{transition-delay:0.4s}
+
+/* LANG TOGGLE */
+.lang-toggle{display:flex;background:var(--bg3);border:1px solid var(--border2);border-radius:100px;padding:3px;gap:2px}
+.lang-btn{padding:5px 14px;border-radius:100px;font-size:0.8125rem;font-weight:600;transition:all var(--transition);color:var(--text3)}
+.lang-btn.active{background:var(--g);color:#000}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .pricing-grid{grid-template-columns:1fr;max-width:420px}
+  .footer-main{grid-template-columns:1fr 1fr}
+  .db-metrics{grid-template-columns:1fr 1fr}
+  .db-charts{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  nav{padding:0 4%}
+  .nav-btn-primary{display:none}
+  section{padding:70px 4%}
+  .hero-stats{flex-direction:column;gap:20px}
+  .hero-stat+.hero-stat{border-left:none;border-top:1px solid var(--border)}
+  .about-cards{grid-template-columns:1fr}
+  .affiliate-steps::before{display:none}
+  .footer-main{grid-template-columns:1fr}
+}
+
+/* RTL */
+[dir="rtl"] .section-label::before{display:none}
+[dir="rtl"] .section-label::after{content:'';display:block;width:20px;height:2px;background:var(--g)}
+[dir="rtl"] .hero-stat+.hero-stat{border-left:none;border-right:1px solid var(--border)}
+[dir="rtl"] .service-benefits li{flex-direction:row-reverse;text-align:right}
+[dir="rtl"] .affiliate-steps::before{background:linear-gradient(270deg,var(--g),rgba(34,197,94,0.1))}
+[dir="rtl"] .faq-question{text-align:right}
+
+/* HIDDEN LANG */
+.lang-en,.lang-ar{display:none}
+body.en .lang-en,.body-en .lang-en{display:block}
+body.ar .lang-ar,.body-ar .lang-ar{display:block}
+.lang-en-inline,.lang-ar-inline{display:none}
+body.en .lang-en-inline{display:inline}
+body.ar .lang-ar-inline{display:inline}
+body.en .lang-en-flex{display:flex}
+body.ar .lang-ar-flex{display:flex}
+</style>
+</head>
+<body class="en">
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/201142070183" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Next<span>Growth</span></a>
+  <div class="nav-controls">
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-ar" onclick="setLang('ar')">AR</button>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <span id="theme-icon">☀</span>
+    </button>
+    <a href="#contact" class="nav-btn nav-btn-primary lang-en-inline">Book Free Audit</a>
+    <a href="#contact" class="nav-btn nav-btn-primary lang-ar-inline">احجز مراجعة مجانية</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="lang-en-inline">Cairo's #1 Growth Agency</span>
+      <span class="lang-ar-inline">وكالة النمو الأولى في القاهرة</span>
+    </div>
+    <h1 class="lang-en">We Don't Manage Pages.<br><em>We Grow Revenue.</em></h1>
+    <h1 class="lang-ar">نحن لا ندير صفحات.<br><em>نحن ننمّي إيراداتك.</em></h1>
+    <p class="hero-sub lang-en">Helping businesses scale using smart marketing systems, paid ads, and affiliate growth strategies that deliver measurable ROI.</p>
+    <p class="hero-sub lang-ar">نساعد الشركات على النمو باستخدام أنظمة تسويق ذكية وإعلانات مدفوعة واستراتيجيات تسويق بالعمولة تحقق عائدًا ملموسًا.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary lang-en">🚀 Get Free Audit</a>
+      <a href="#contact" class="btn-primary lang-ar">🚀 احصل على مراجعة مجانية</a>
+      <a href="https://wa.me/201142070183" target="_blank" class="btn-wa lang-en">💬 WhatsApp Us</a>
+      <a href="https://wa.me/201142070183" target="_blank" class="btn-wa lang-ar">💬 راسلنا على واتساب</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="stat-num" data-target="150">0</div>
+        <div class="stat-label lang-en">Clients Served</div>
+        <div class="stat-label lang-ar">عميل تم خدمته</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num" data-target="300" data-suffix="%">0%</div>
+        <div class="stat-label lang-en">Avg. ROI Increase</div>
+        <div class="stat-label lang-ar">متوسط زيادة العائد</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num" data-target="50" data-prefix="$" data-suffix="M+">$0</div>
+        <div class="stat-label lang-en">Revenue Generated</div>
+        <div class="stat-label lang-ar">إيرادات تم تحقيقها</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num" data-target="5">0</div>
+        <div class="stat-label lang-en">Years of Growth</div>
+        <div class="stat-label lang-ar">سنوات من النمو</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-head reveal">
+    <div class="section-label lang-en">About NextGrowth</div>
+    <div class="section-label lang-ar">عن NextGrowth</div>
+    <h2 class="section-title lang-en">Data-Driven Growth,<br>Real Results.</h2>
+    <h2 class="section-title lang-ar">نمو مبني على البيانات،<br>نتائج حقيقية.</h2>
+  </div>
+  <div class="about-grid">
+    <div class="reveal">
+      <div class="about-pills">
+        <span class="pill active lang-en">Growth Focused</span>
+        <span class="pill active lang-ar">نمو محوري</span>
+        <span class="pill lang-en">Data-Driven</span>
+        <span class="pill lang-ar">مبني على البيانات</span>
+        <span class="pill lang-en">Cairo-Based</span>
+        <span class="pill lang-ar">مقر القاهرة</span>
+        <span class="pill lang-en">Startup Friendly</span>
+        <span class="pill lang-ar">مناسب للشركات الناشئة</span>
+      </div>
+      <p class="lang-en" style="color:var(--text2);line-height:1.8;margin-bottom:20px">NextGrowth is a Cairo-based marketing agency laser-focused on one thing: growing your revenue. We don't just post content — we build systems that generate consistent, measurable results for businesses of all sizes.</p>
+      <p class="lang-ar" style="color:var(--text2);line-height:1.8;margin-bottom:20px;text-align:right">NextGrowth هي وكالة تسويق مقرها القاهرة تركز على شيء واحد: تنمية إيراداتك. نحن لا نكتفي بنشر المحتوى — نبني أنظمة تولّد نتائج ثابتة وقابلة للقياس للشركات بجميع أحجامها.</p>
+      <a href="#contact" class="btn-primary lang-en" style="display:inline-flex">Work With Us →</a>
+      <a href="#contact" class="btn-primary lang-ar" style="display:inline-flex">اعمل معنا →</a>
+    </div>
+    <div class="about-cards reveal reveal-delay-2">
+      <div class="about-card">
+        <div class="about-card-icon">🎯</div>
+        <h4 class="lang-en">Our Mission</h4>
+        <h4 class="lang-ar">مهمتنا</h4>
+        <p class="lang-en">Empower businesses with data-driven strategies that turn marketing spend into real revenue growth.</p>
+        <p class="lang-ar">تمكين الشركات بأنظمة مبنية على البيانات تحوّل الإنفاق التسويقي إلى نمو حقيقي في الإيرادات.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🔭</div>
+        <h4 class="lang-en">Our Vision</h4>
+        <h4 class="lang-ar">رؤيتنا</h4>
+        <p class="lang-en">To be the leading growth agency in MENA, known for transparent results and startup-friendly systems.</p>
+        <p class="lang-ar">أن نكون الوكالة الرائدة في النمو بالشرق الأوسط وشمال أفريقيا، معروفة بالنتائج الشفافة والأنظمة الملائمة للشركات الناشئة.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">⚡</div>
+        <h4 class="lang-en">Why Choose Us</h4>
+        <h4 class="lang-ar">لماذا تختارنا</h4>
+        <p class="lang-en">No fluff, no vanity metrics. We report what matters: leads, revenue, and actual business growth.</p>
+        <p class="lang-ar">لا تضخيم، لا مقاييس وهمية. نرفع تقارير عمّا يهم: العملاء المحتملين والإيرادات والنمو الفعلي.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🤝</div>
+        <h4 class="lang-en">Our Approach</h4>
+        <h4 class="lang-ar">نهجنا</h4>
+        <p class="lang-en">Full funnel ownership — from awareness to conversion — with monthly performance reviews and transparent reporting.</p>
+        <p class="lang-ar">إدارة القمع التسويقي بالكامل من الوعي إلى التحويل مع مراجعات شهرية وتقارير شفافة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-bg">
+  <div class="section-head reveal">
+    <div class="section-label lang-en">What We Do</div>
+    <div class="section-label lang-ar">ماذا نفعل</div>
+    <h2 class="section-title lang-en">Services Built for<br>Serious Growth.</h2>
+    <h2 class="section-title lang-ar">خدمات مصممة<br>للنمو الجاد.</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">📱</div>
+      <h3 class="lang-en">Social Media Management</h3>
+      <h3 class="lang-ar">إدارة وسائل التواصل الاجتماعي</h3>
+      <p class="lang-en">Strategic content creation, scheduling, and community management that builds brand authority and drives organic engagement.</p>
+      <p class="lang-ar">إنشاء محتوى استراتيجي وجدولة وإدارة مجتمع تبني سلطة العلامة التجارية وتعزز التفاعل العضوي.</p>
+      <ul class="service-benefits lang-en"><li>Custom content calendars</li><li>Engagement optimization</li><li>Brand voice development</li><li>Monthly analytics reports</li></ul>
+      <ul class="service-benefits lang-ar"><li>تقاويم محتوى مخصصة</li><li>تحسين التفاعل</li><li>تطوير صوت العلامة التجارية</li><li>تقارير تحليلية شهرية</li></ul>
+      <a href="#contact" class="btn-outline lang-en">Get Started →</a>
+      <a href="#contact" class="btn-outline lang-ar">ابدأ الآن →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-icon">🎯</div>
+      <h3 class="lang-en">Facebook & Instagram Ads</h3>
+      <h3 class="lang-ar">إعلانات فيسبوك وإنستجرام</h3>
+      <p class="lang-en">ROI-focused paid advertising campaigns with precise audience targeting, A/B testing, and continuous optimization to maximize every dollar spent.</p>
+      <p class="lang-ar">حملات إعلانية مدفوعة تركز على العائد مع استهداف دقيق للجمهور واختبار A/B وتحسين مستمر لتحقيق أقصى استفادة من كل جنيه.</p>
+      <ul class="service-benefits lang-en"><li>Audience research & targeting</li><li>Creative ad production</li><li>ROAS optimization</li><li>Weekly performance reports</li></ul>
+      <ul class="service-benefits lang-ar"><li>بحث واستهداف الجمهور</li><li>إنتاج الإعلانات الإبداعية</li><li>تحسين العائد على الإنفاق</li><li>تقارير أداء أسبوعية</li></ul>
+      <a href="#contact" class="btn-outline lang-en">Get Started →</a>
+      <a href="#contact" class="btn-outline lang-ar">ابدأ الآن →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-icon">🔗</div>
+      <h3 class="lang-en">Affiliate Marketing Systems</h3>
+      <h3 class="lang-ar">أنظمة التسويق بالعمولة</h3>
+      <p class="lang-en">Build a network of partners who sell for you. We design, launch, and manage full affiliate programs with tracking, commissions, and payouts.</p>
+      <p class="lang-ar">بناء شبكة من الشركاء الذين يبيعون نيابةً عنك. نصمم وننشئ وندير برامج تسويق بالعمولة متكاملة مع التتبع والعمولات والمدفوعات.</p>
+      <ul class="service-benefits lang-en"><li>Custom tracking links</li><li>Commission structure design</li><li>Partner recruitment</li><li>Revenue-sharing dashboards</li></ul>
+      <ul class="service-benefits lang-ar"><li>روابط تتبع مخصصة</li><li>تصميم هيكل العمولات</li><li>استقطاب الشركاء</li><li>لوحات تقسيم الإيرادات</li></ul>
+      <a href="#contact" class="btn-outline lang-en">Get Started →</a>
+      <a href="#contact" class="btn-outline lang-ar">ابدأ الآن →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">✨</div>
+      <h3 class="lang-en">Branding & Content Creation</h3>
+      <h3 class="lang-ar">العلامة التجارية وإنشاء المحتوى</h3>
+      <p class="lang-en">Professional brand identity, visual content, video production, and copywriting that positions your business as the premium choice.</p>
+      <p class="lang-ar">هوية علامة تجارية احترافية ومحتوى مرئي وإنتاج فيديو وكتابة نصوص تضع عملك في مكانة الخيار المميز.</p>
+      <ul class="service-benefits lang-en"><li>Logo & brand identity</li><li>Video & photo content</li><li>Arabic & English copy</li><li>Brand guidelines</li></ul>
+      <ul class="service-benefits lang-ar"><li>شعار وهوية بصرية</li><li>محتوى فيديو وصور</li><li>كتابة عربية وإنجليزية</li><li>دليل العلامة التجارية</li></ul>
+      <a href="#contact" class="btn-outline lang-en">Get Started →</a>
+      <a href="#contact" class="btn-outline lang-ar">ابدأ الآن →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-icon">🚀</div>
+      <h3 class="lang-en">Lead Generation Funnels</h3>
+      <h3 class="lang-ar">قمع توليد العملاء المحتملين</h3>
+      <p class="lang-en">End-to-end sales funnels that capture, nurture, and convert prospects into paying customers automatically.</p>
+      <p class="lang-ar">قمع مبيعات متكامل يلتقط ويرعى ويحوّل العملاء المحتملين إلى عملاء فعليين بشكل تلقائي.</p>
+      <ul class="service-benefits lang-en"><li>Landing page design</li><li>Email automation</li><li>CRM integration</li><li>Conversion tracking</li></ul>
+      <ul class="service-benefits lang-ar"><li>تصميم صفحات الهبوط</li><li>أتمتة البريد الإلكتروني</li><li>تكامل CRM</li><li>تتبع التحويلات</li></ul>
+      <a href="#contact" class="btn-outline lang-en">Get Started →</a>
+      <a href="#contact" class="btn-outline lang-ar">ابدأ الآن →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-icon">📊</div>
+      <h3 class="lang-en">Growth Strategy Consulting</h3>
+      <h3 class="lang-ar">استشارات استراتيجية النمو</h3>
+      <p class="lang-en">Deep dive into your business metrics, competitor landscape, and market opportunities to build a custom 90-day growth roadmap.</p>
+      <p class="lang-ar">دراسة معمقة لمقاييس عملك ومشهد المنافسين وفرص السوق لبناء خارطة طريق نمو مخصصة لـ 90 يومًا.</p>
+      <ul class="service-benefits lang-en"><li>Market analysis</li><li>Competitor benchmarking</li><li>90-day growth plan</li><li>KPI framework setup</li></ul>
+      <ul class="service-benefits lang-ar"><li>تحليل السوق</li><li>مقارنة المنافسين</li><li>خطة نمو 90 يومًا</li><li>إعداد إطار KPI</li></ul>
+      <a href="#contact" class="btn-outline lang-en">Get Started →</a>
+      <a href="#contact" class="btn-outline lang-ar">ابدأ الآن →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="results">
+  <div class="section-head reveal">
+    <div class="section-label lang-en">Proven Results</div>
+    <div class="section-label lang-ar">نتائج مثبتة</div>
+    <h2 class="section-title lang-en">Real Businesses,<br>Real Numbers.</h2>
+    <h2 class="section-title lang-ar">شركات حقيقية،<br>أرقام حقيقية.</h2>
+    <p class="section-desc lang-en">From local restaurants to e-commerce brands — here's what growth looks like.</p>
+    <p class="section-desc lang-ar">من المطاعم المحلية إلى علامات التجارة الإلكترونية — هذا هو شكل النمو.</p>
+  </div>
+  <div class="cases-grid">
+    <div class="case-card reveal">
+      <div class="case-header">
+        <div class="case-tag restaurant lang-en">🍕 Restaurant</div>
+        <div class="case-tag restaurant lang-ar">🍕 مطعم</div>
+        <h3 class="lang-en">Beirut Bites — Cairo Branch</h3>
+        <h3 class="lang-ar">بيروت بايتس — فرع القاهرة</h3>
+        <p class="lang-en">Struggling local restaurant with low online presence and zero delivery orders.</p>
+        <p class="lang-ar">مطعم محلي يعاني من ضعف التواجد الرقمي وصفر طلبات توصيل.</p>
+      </div>
+      <div class="case-metrics">
+        <div class="case-metric">
+          <label class="lang-en">Online Orders</label>
+          <label class="lang-ar">الطلبات الإلكترونية</label>
+          <div class="val">+420%</div>
+          <div class="case-bar"><div class="case-bar-fill" data-width="84%"></div></div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Monthly Revenue</label>
+          <label class="lang-ar">الإيرادات الشهرية</label>
+          <div class="val">+180%</div>
+          <div class="case-bar"><div class="case-bar-fill" data-width="60%"></div></div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Followers Gained</label>
+          <label class="lang-ar">المتابعون المكتسبون</label>
+          <div class="val">28K</div>
+          <div class="desc lang-en">in 90 days</div>
+          <div class="desc lang-ar">في 90 يومًا</div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Ad Spend ROAS</label>
+          <label class="lang-ar">عائد الإنفاق الإعلاني</label>
+          <div class="val">6.8x</div>
+          <div class="desc lang-en">return on ad spend</div>
+          <div class="desc lang-ar">عائد على الإنفاق</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-card reveal reveal-delay-1">
+      <div class="case-header">
+        <div class="case-tag ecom lang-en">🛍 E-Commerce Brand</div>
+        <div class="case-tag ecom lang-ar">🛍 تجارة إلكترونية</div>
+        <h3 class="lang-en">LuxeWear — Fashion Brand</h3>
+        <h3 class="lang-ar">لوكس وير — علامة أزياء</h3>
+        <p class="lang-en">Egyptian fashion brand with great products but minimal digital sales and brand awareness.</p>
+        <p class="lang-ar">علامة أزياء مصرية بمنتجات رائعة لكن مبيعات رقمية ووعي ضعيف.</p>
+      </div>
+      <div class="case-metrics">
+        <div class="case-metric">
+          <label class="lang-en">Monthly Sales</label>
+          <label class="lang-ar">المبيعات الشهرية</label>
+          <div class="val">+340%</div>
+          <div class="case-bar"><div class="case-bar-fill" data-width="78%"></div></div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Affiliate Partners</label>
+          <label class="lang-ar">شركاء العمولة</label>
+          <div class="val">85+</div>
+          <div class="case-bar"><div class="case-bar-fill" data-width="55%"></div></div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Revenue via Affiliates</label>
+          <label class="lang-ar">إيرادات الشركاء</label>
+          <div class="val">40%</div>
+          <div class="desc lang-en">of total revenue</div>
+          <div class="desc lang-ar">من إجمالي الإيرادات</div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Cost Per Acquisition</label>
+          <label class="lang-ar">تكلفة الاستحواذ</label>
+          <div class="val">-65%</div>
+          <div class="desc lang-en">reduction achieved</div>
+          <div class="desc lang-ar">تخفيض تحقق</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-card reveal reveal-delay-2">
+      <div class="case-header">
+        <div class="case-tag clinic lang-en">🏥 Medical Clinic</div>
+        <div class="case-tag clinic lang-ar">🏥 عيادة طبية</div>
+        <h3 class="lang-en">SmileFirst Dental Clinic</h3>
+        <h3 class="lang-ar">سمايل فيرست لطب الأسنان</h3>
+        <p class="lang-en">New dental clinic in Cairo with difficulty attracting patients in a competitive market.</p>
+        <p class="lang-ar">عيادة أسنان جديدة في القاهرة تواجه صعوبة في استقطاب المرضى في سوق تنافسية.</p>
+      </div>
+      <div class="case-metrics">
+        <div class="case-metric">
+          <label class="lang-en">Monthly Appointments</label>
+          <label class="lang-ar">المواعيد الشهرية</label>
+          <div class="val">+280%</div>
+          <div class="case-bar"><div class="case-bar-fill" data-width="70%"></div></div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Leads Generated</label>
+          <label class="lang-ar">العملاء المحتملون</label>
+          <div class="val">1.2K</div>
+          <div class="case-bar"><div class="case-bar-fill" data-width="65%"></div></div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Lead-to-Patient Rate</label>
+          <label class="lang-ar">معدل تحويل العملاء</label>
+          <div class="val">38%</div>
+          <div class="desc lang-en">conversion rate</div>
+          <div class="desc lang-ar">معدل التحويل</div>
+        </div>
+        <div class="case-metric">
+          <label class="lang-en">Revenue Growth</label>
+          <label class="lang-ar">نمو الإيرادات</label>
+          <div class="val">+210%</div>
+          <div class="desc lang-en">in 6 months</div>
+          <div class="desc lang-ar">في 6 أشهر</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="pricing-bg">
+  <div class="section-head reveal" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+    <div class="section-label lang-en">Pricing</div>
+    <div class="section-label lang-ar">الأسعار</div>
+    <h2 class="section-title lang-en">Transparent Plans,<br>Clear Results.</h2>
+    <h2 class="section-title lang-ar">خطط شفافة،<br>نتائج واضحة.</h2>
+  </div>
+  <div class="pricing-grid">
+    <div class="pricing-card reveal">
+      <div class="pricing-badge lang-en">Basic</div>
+      <div class="pricing-badge lang-ar">أساسي</div>
+      <h3 class="lang-en">Starter Growth</h3>
+      <h3 class="lang-ar">النمو التجريبي</h3>
+      <div class="pricing-price">EGP <span>9,500</span></div>
+      <div class="pricing-period lang-en">/ month</div>
+      <div class="pricing-period lang-ar">/ شهرياً</div>
+      <ul class="pricing-features lang-en">
+        <li><span class="check">✓</span> Social Media Management (2 platforms)</li>
+        <li><span class="check">✓</span> 8 Professional Posts / month</li>
+        <li><span class="check">✓</span> Community Management</li>
+        <li><span class="check">✓</span> Monthly Analytics Report</li>
+        <li><span class="check">✓</span> Arabic & English Content</li>
+        <li style="opacity:0.4">✗ Paid Advertising</li>
+        <li style="opacity:0.4">✗ Affiliate System</li>
+      </ul>
+      <ul class="pricing-features lang-ar">
+        <li><span class="check">✓</span> إدارة وسائل تواصل (منصتان)</li>
+        <li><span class="check">✓</span> 8 منشورات احترافية / شهر</li>
+        <li><span class="check">✓</span> إدارة المجتمع</li>
+        <li><span class="check">✓</span> تقرير تحليلي شهري</li>
+        <li><span class="check">✓</span> محتوى عربي وإنجليزي</li>
+      </ul>
+      <a href="#contact" class="btn-pricing btn-pricing-outline lang-en">Get Started</a>
+      <a href="#contact" class="btn-pricing btn-pricing-outline lang-ar">ابدأ الآن</a>
+    </div>
+    <div class="pricing-card featured reveal reveal-delay-1">
+      <div class="pricing-badge lang-en">Standard</div>
+      <div class="pricing-badge lang-ar">معتدل</div>
+      <h3 class="lang-en">Accelerated Growth</h3>
+      <h3 class="lang-ar">النمو المتسارع</h3>
+      <div class="pricing-price">EGP <span>19,500</span></div>
+      <div class="pricing-period lang-en">/ month</div>
+      <div class="pricing-period lang-ar">/ شهرياً</div>
+      <ul class="pricing-features lang-en">
+        <li><span class="check">✓</span> Social Media + Paid Ads</li>
+        <li><span class="check">✓</span> 12 Professional Posts / month</li>
+        <li><span class="check">✓</span> Ad Budget Optimization</li>
+        <li><span class="check">✓</span> A/B Testing & Optimization</li>
+        <li><span class="check">✓</span> Weekly Performance Reports</li>
+        <li><span class="check">✓</span> Lead Generation Funnel</li>
+        <li style="opacity:0.4">✗ Affiliate System</li>
+      </ul>
+      <ul class="pricing-features lang-ar">
+        <li><span class="check">✓</span> تواصل اجتماعي + إعلانات</li>
+        <li><span class="check">✓</span> 12 منشور / شهر</li>
+        <li><span class="check">✓</span> تحسين ميزانية الإعلانات</li>
+        <li><span class="check">✓</span> اختبار وتحسين A/B</li>
+        <li><span class="check">✓</span> تقارير أداء أسبوعية</li>
+        <li><span class="check">✓</span> قمع توليد العملاء</li>
+      </ul>
+      <a href="#contact" class="btn-pricing btn-pricing-primary lang-en">Get Started</a>
+      <a href="#contact" class="btn-pricing btn-pricing-primary lang-ar">ابدأ الآن</a>
+    </div>
+    <div class="pricing-card reveal reveal-delay-2">
+      <div class="pricing-badge lang-en">Premium</div>
+      <div class="pricing-badge lang-ar">بريميوم</div>
+      <h3 class="lang-en">Full Growth System</h3>
+      <h3 class="lang-ar">نظام النمو الكامل</h3>
+      <div class="pricing-price">EGP <span>35,000</span></div>
+      <div class="pricing-period lang-en">/ month</div>
+      <div class="pricing-period lang-ar">/ شهرياً</div>
+      <ul class="pricing-features lang-en">
+        <li><span class="check">✓</span> Everything in Standard</li>
+        <li><span class="check">✓</span> Affiliate Marketing System</li>
+        <li><span class="check">✓</span> Analytics Dashboard Access</li>
+        <li><span class="check">✓</span> Priority Support (24/7)</li>
+        <li><span class="check">✓</span> Dedicated Growth Manager</li>
+        <li><span class="check">✓</span> Monthly Strategy Sessions</li>
+        <li><span class="check">✓</span> Full Funnel Build-Out</li>
+      </ul>
+      <ul class="pricing-features lang-ar">
+        <li><span class="check">✓</span> كل ما في الخطة المعتدلة</li>
+        <li><span class="check">✓</span> نظام التسويق بالعمولة</li>
+        <li><span class="check">✓</span> لوحة تحليلات متكاملة</li>
+        <li><span class="check">✓</span> دعم أولوية 24/7</li>
+        <li><span class="check">✓</span> مدير نمو مخصص</li>
+        <li><span class="check">✓</span> جلسات استراتيجية شهرية</li>
+        <li><span class="check">✓</span> بناء قمع متكامل</li>
+      </ul>
+      <a href="#contact" class="btn-pricing btn-pricing-outline lang-en">Get Started</a>
+      <a href="#contact" class="btn-pricing btn-pricing-outline lang-ar">ابدأ الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- AFFILIATE SYSTEM -->
+<section id="affiliate">
+  <div class="section-head reveal" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+    <div class="section-label lang-en">Affiliate System</div>
+    <div class="section-label lang-ar">نظام العمولة</div>
+    <h2 class="section-title lang-en">Your Sales Team,<br>On Commission.</h2>
+    <h2 class="section-title lang-ar">فريق مبيعاتك،<br>بنظام العمولة.</h2>
+    <p class="section-desc lang-en" style="text-align:center">Build a network of partners who sell your products while you focus on delivery.</p>
+    <p class="section-desc lang-ar" style="text-align:center">بناء شبكة من الشركاء يبيعون منتجاتك بينما تركز على التسليم.</p>
+  </div>
+  <div class="affiliate-steps reveal">
+    <div class="aff-step">
+      <div class="aff-step-num">01</div>
+      <h4 class="lang-en">System Setup</h4>
+      <h4 class="lang-ar">إعداد النظام</h4>
+      <p class="lang-en">We build your affiliate platform with custom tracking links, dashboards, and automated payouts.</p>
+      <p class="lang-ar">نبني منصة العمولة الخاصة بك مع روابط تتبع ولوحات تحكم ومدفوعات آلية.</p>
+    </div>
+    <div class="aff-step">
+      <div class="aff-step-num">02</div>
+      <h4 class="lang-en">Partner Recruitment</h4>
+      <h4 class="lang-ar">استقطاب الشركاء</h4>
+      <p class="lang-en">We recruit and onboard influencers, bloggers, and resellers into your affiliate program.</p>
+      <p class="lang-ar">نستقطب ونضم المؤثرين والمدونين وتجار التجزئة إلى برنامج العمولة.</p>
+    </div>
+    <div class="aff-step">
+      <div class="aff-step-num">03</div>
+      <h4 class="lang-en">Sales Tracking</h4>
+      <h4 class="lang-ar">تتبع المبيعات</h4>
+      <p class="lang-en">Every click, sale, and commission is tracked in real-time. Full transparency for you and your partners.</p>
+      <p class="lang-ar">كل نقرة ومبيعة وعمولة تُتبع في الوقت الفعلي. شفافية كاملة لك وشركائك.</p>
+    </div>
+    <div class="aff-step">
+      <div class="aff-step-num">04</div>
+      <h4 class="lang-en">Revenue Sharing</h4>
+      <h4 class="lang-ar">تقسيم الإيرادات</h4>
+      <p class="lang-en">Automated commission payouts keep partners motivated and your sales growing month over month.</p>
+      <p class="lang-ar">مدفوعات العمولة الآلية تحفز الشركاء وتحافظ على نمو مبيعاتك شهرًا بعد شهر.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD PREVIEW -->
+<section id="dashboard" class="dashboard-bg">
+  <div class="section-head reveal" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+    <div class="section-label lang-en">Your Command Center</div>
+    <div class="section-label lang-ar">مركز تحكمك</div>
+    <h2 class="section-title lang-en">See Everything,<br>In Real Time.</h2>
+    <h2 class="section-title lang-ar">اعرف كل شيء،<br>في الوقت الحقيقي.</h2>
+  </div>
+  <div class="dashboard-preview reveal">
+    <div class="db-header">
+      <div class="db-dot" style="background:#ff5f57"></div>
+      <div class="db-dot" style="background:#febc2e"></div>
+      <div class="db-dot" style="background:#28c840"></div>
+      <span style="font-size:0.8125rem;color:var(--text3);margin-left:12px">NextGrowth Analytics Dashboard</span>
+    </div>
+    <div class="db-body">
+      <div class="db-metrics">
+        <div class="db-metric">
+          <label class="lang-en">Total Revenue</label>
+          <label class="lang-ar">إجمالي الإيرادات</label>
+          <div class="db-val">EGP 847K</div>
+          <div class="db-change">↑ 34% this month</div>
+        </div>
+        <div class="db-metric">
+          <label class="lang-en">New Leads</label>
+          <label class="lang-ar">العملاء الجدد</label>
+          <div class="db-val">1,284</div>
+          <div class="db-change">↑ 18% this week</div>
+        </div>
+        <div class="db-metric">
+          <label class="lang-en">Active Campaigns</label>
+          <label class="lang-ar">الحملات النشطة</label>
+          <div class="db-val">12</div>
+          <div class="db-change">↑ 3 new launched</div>
+        </div>
+        <div class="db-metric">
+          <label class="lang-en">Avg. ROAS</label>
+          <label class="lang-ar">متوسط العائد</label>
+          <div class="db-val">7.2x</div>
+          <div class="db-change">↑ from 5.1x last month</div>
+        </div>
+      </div>
+      <div class="db-charts">
+        <div class="db-chart-box">
+          <div class="db-chart-title lang-en">Revenue Growth (6 months)</div>
+          <div class="db-chart-title lang-ar">نمو الإيرادات (6 أشهر)</div>
+          <div class="db-bars" id="db-bars">
+            <div class="db-bar" style="height:40%"></div>
+            <div class="db-bar" style="height:55%"></div>
+            <div class="db-bar" style="height:48%"></div>
+            <div class="db-bar" style="height:72%"></div>
+            <div class="db-bar" style="height:85%"></div>
+            <div class="db-bar" style="height:100%"></div>
+          </div>
+        </div>
+        <div class="db-chart-box" style="position:relative">
+          <div class="db-chart-title lang-en">Lead Conversion</div>
+          <div class="db-chart-title lang-ar">تحويل العملاء</div>
+          <div class="db-donut"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-head reveal" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+    <div class="section-label lang-en">What Clients Say</div>
+    <div class="section-label lang-ar">ماذا يقول عملاؤنا</div>
+    <h2 class="section-title lang-en">Words From<br>Real Clients.</h2>
+    <h2 class="section-title lang-ar">من تجارب<br>عملاء حقيقيين.</h2>
+  </div>
+  <div class="testimonials-slider">
+    <div class="testimonials-track">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text lang-en">"NextGrowth transformed our online presence completely. Within 3 months, our restaurant went from 200 to 8,000 monthly online orders. The ROI is simply unbelievable."</p>
+        <p class="testimonial-text lang-ar">"غيّر NextGrowth تواجدنا الرقمي تمامًا. في غضون 3 أشهر، انتقل مطعمنا من 200 إلى 8,000 طلب شهري عبر الإنترنت."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#fb923c">AK</div>
+          <div>
+            <div class="testimonial-name lang-en">Ahmed Kamel</div>
+            <div class="testimonial-name lang-ar">أحمد كامل</div>
+            <div class="testimonial-role lang-en">Owner, Beirut Bites Cairo</div>
+            <div class="testimonial-role lang-ar">مالك، بيروت بايتس القاهرة</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text lang-en">"The affiliate system they built for us is now generating 40% of our total revenue completely on autopilot. Worth every pound we invested."</p>
+        <p class="testimonial-text lang-ar">"نظام العمولة الذي بنوه لنا يولّد الآن 40% من إجمالي إيراداتنا تلقائيًا. يستحق كل جنيه استثمرناه."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#818cf8">SM</div>
+          <div>
+            <div class="testimonial-name lang-en">Sara Mostafa</div>
+            <div class="testimonial-name lang-ar">سارة مصطفى</div>
+            <div class="testimonial-role lang-en">CEO, LuxeWear Egypt</div>
+            <div class="testimonial-role lang-ar">مديرة تنفيذية، لوكس وير</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text lang-en">"As a new clinic, we were invisible online. NextGrowth's targeted ads brought us 280% more appointments in 6 months. Outstanding work!"</p>
+        <p class="testimonial-text lang-ar">"كعيادة جديدة، كنا غير مرئيين رقميًا. أعلانات NextGrowth المستهدفة جلبت لنا 280% مزيدًا من المواعيد في 6 أشهر."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:var(--g)">DR</div>
+          <div>
+            <div class="testimonial-name lang-en">Dr. Rania Hassan</div>
+            <div class="testimonial-name lang-ar">د. رانيا حسن</div>
+            <div class="testimonial-role lang-en">Founder, SmileFirst Dental</div>
+            <div class="testimonial-role lang-ar">مؤسسة، سمايل فيرست للأسنان</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text lang-en">"The transparency and results-focused approach is what sets NextGrowth apart. Real metrics, real growth — exactly what every business needs."</p>
+        <p class="testimonial-text lang-ar">"الشفافية والتركيز على النتائج هو ما يميز NextGrowth. مقاييس حقيقية ونمو حقيقي — بالضبط ما تحتاجه كل شركة."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#f43f5e">OA</div>
+          <div>
+            <div class="testimonial-name lang-en">Omar Abdelhady</div>
+            <div class="testimonial-name lang-ar">عمر عبدالهادي</div>
+            <div class="testimonial-role lang-en">MD, TechStartup Cairo</div>
+            <div class="testimonial-role lang-ar">مدير، تك ستارتب القاهرة</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text lang-en">"Doubled our revenue in 4 months. The team is professional, responsive, and genuinely invested in your success. Highly recommend."</p>
+        <p class="testimonial-text lang-ar">"ضاعفنا إيراداتنا في 4 أشهر. الفريق محترف ومتجاوب ومخلص حقًا لنجاحك. أنصح بهم بشدة."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#0ea5e9">NY</div>
+          <div>
+            <div class="testimonial-name lang-en">Nour Yasser</div>
+            <div class="testimonial-name lang-ar">نور ياسر</div>
+            <div class="testimonial-role lang-en">Founder, Nour Beauty</div>
+            <div class="testimonial-role lang-ar">مؤسسة، نور بيوتي</div>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicate for infinite scroll -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text lang-en">"NextGrowth transformed our online presence completely. Within 3 months, our restaurant went from 200 to 8,000 monthly online orders."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#fb923c">AK</div>
+          <div>
+            <div class="testimonial-name">Ahmed Kamel</div>
+            <div class="testimonial-role">Owner, Beirut Bites Cairo</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text lang-en">"The affiliate system they built for us is now generating 40% of our total revenue completely on autopilot."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#818cf8">SM</div>
+          <div>
+            <div class="testimonial-name">Sara Mostafa</div>
+            <div class="testimonial-role">CEO, LuxeWear Egypt</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text lang-en">"NextGrowth's targeted ads brought us 280% more appointments in 6 months. Outstanding work!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:var(--g)">DR</div>
+          <div>
+            <div class="testimonial-name">Dr. Rania Hassan</div>
+            <div class="testimonial-role">Founder, SmileFirst Dental</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-bg">
+  <div class="section-head reveal" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+    <div class="section-label lang-en">FAQ</div>
+    <div class="section-label lang-ar">الأسئلة الشائعة</div>
+    <h2 class="section-title lang-en">Questions We<br>Hear Often.</h2>
+    <h2 class="section-title lang-ar">أسئلة نسمعها<br>كثيرًا.</h2>
+  </div>
+  <div class="faq-grid lang-en reveal">
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How long before I see results from paid ads?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>Most clients see measurable results within the first 2–4 weeks. We typically run a 2-week learning phase to optimize targeting, then scale what's working. By month 2, you'll have a clear picture of your ROAS and cost per lead.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What's the minimum ad budget I need?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>We recommend a minimum ad spend of EGP 3,000–5,000/month for meaningful results. Our management fee is separate from your ad budget, which goes directly to Facebook/Google. We'll advise the right budget for your industry and goals.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Do you work with startups and small businesses?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>Absolutely. Some of our best success stories are early-stage businesses. We design startup-friendly plans that scale with your growth, so you don't need a massive budget to get started — you just need the right strategy.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How does your affiliate marketing system work?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>We build a custom affiliate platform for your business with unique tracking links for each partner. When someone sells your product through their link, the commission is automatically calculated and logged. You get full visibility into every sale, every partner, and every payout.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What ROI can I realistically expect?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>Our average client sees a 3–7x ROAS within 90 days. This varies by industry, budget, and starting point. We set clear KPI targets in month 1 so you always know what we're working toward and how performance stacks up.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Do you provide Arabic content and bilingual campaigns?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>Yes — all our campaigns are available in Arabic, English, or both. We have native Arabic copywriters on the team, and all ad creatives, landing pages, and social content can be fully bilingual. Perfect for targeting both Egyptian and GCC markets.</p></div>
+    </div>
+  </div>
+  <div class="faq-grid lang-ar reveal" style="text-align:right;direction:rtl">
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        كم من الوقت قبل أرى نتائج من الإعلانات المدفوعة؟
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>معظم العملاء يرون نتائج قابلة للقياس خلال أول 2-4 أسابيع. نُجري مرحلة تعلم لمدة أسبوعين لتحسين الاستهداف ثم نوسّع ما ينجح. في الشهر الثاني، ستحصل على صورة واضحة عن عائد إنفاقك الإعلاني وتكلفة العميل المحتمل.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        ما هو الحد الأدنى لميزانية الإعلانات؟
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>نوصي بحد أدنى لإنفاق الإعلانات يتراوح بين 3,000-5,000 جنيه مصري شهريًا للحصول على نتائج مجدية. رسوم إدارتنا منفصلة عن ميزانية إعلاناتك التي تذهب مباشرةً إلى فيسبوك/جوجل.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        هل تعملون مع الشركات الناشئة والصغيرة؟
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>بالتأكيد. بعض أفضل قصص نجاحنا تأتي من أعمال في مرحلة مبكرة. نصمم خططًا ملائمة للشركات الناشئة تنمو مع نموك.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        كيف يعمل نظام التسويق بالعمولة لديكم؟
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer"><p>نبني منصة عمولة مخصصة لعملك مع روابط تتبع فريدة لكل شريك. عند بيع شريك لمنتجك عبر رابطه، تُحسب العمولة تلقائيًا وتُسجّل. ولديك رؤية كاملة لكل مبيعة وكل شريك وكل مدفوعة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="reveal">
+      <div class="section-label lang-en">Get In Touch</div>
+      <div class="section-label lang-ar">تواصل معنا</div>
+      <h3 class="contact-info" style="font-family:var(--ff)">
+        <span class="lang-en">Ready to Grow<br>Your Business?</span>
+        <span class="lang-ar">مستعد لتنمية<br>عملك؟</span>
+      </h3>
+      <p class="lang-en" style="color:var(--text2);line-height:1.7;margin:16px 0 32px">Book a free 30-minute growth audit. No commitments, no sales pressure — just a clear picture of your opportunities.</p>
+      <p class="lang-ar" style="color:var(--text2);line-height:1.7;margin:16px 0 32px;direction:rtl;text-align:right">احجز مراجعة نمو مجانية لمدة 30 دقيقة. بدون التزامات، بدون ضغط مبيعات — فقط صورة واضحة عن فرصك.</p>
+      <div class="contact-links">
+        <a href="https://wa.me/201142070183" target="_blank" class="contact-link">
+          <span class="contact-link-icon">💬</span>
+          <span>+20 114 207 0183</span>
+        </a>
+        <a href="mailto:hello@nextgrowth.agency" class="contact-link">
+          <span class="contact-link-icon">✉️</span>
+          <span>hello@nextgrowth.agency</span>
+        </a>
+        <div class="contact-link">
+          <span class="contact-link-icon">📍</span>
+          <span class="lang-en">Cairo, Egypt</span>
+          <span class="lang-ar">القاهرة، مصر</span>
+        </div>
+      </div>
+      <a href="https://wa.me/201142070183" target="_blank" class="btn-wa" style="margin-top:32px;display:inline-flex;gap:8px;padding:14px 28px;border-radius:100px;border:1px solid #25d366;color:#25d366;font-weight:600;transition:all 0.3s">
+        <span>💬</span>
+        <span class="lang-en">Chat on WhatsApp</span>
+        <span class="lang-ar">تواصل على واتساب</span>
+      </a>
+    </div>
+    <div class="contact-form reveal reveal-delay-2">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="lang-en">Full Name *</label>
+          <label class="lang-ar">الاسم الكامل *</label>
+          <input type="text" placeholder="Ahmed Kamel">
+        </div>
+        <div class="form-group">
+          <label class="lang-en">Phone Number</label>
+          <label class="lang-ar">رقم الهاتف</label>
+          <input type="tel" placeholder="+20 1XX XXX XXXX">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="lang-en">Business / Brand Name *</label>
+        <label class="lang-ar">اسم الشركة / العلامة التجارية *</label>
+        <input type="text" placeholder="Your Brand Name">
+      </div>
+      <div class="form-group">
+        <label class="lang-en">Service You're Interested In</label>
+        <label class="lang-ar">الخدمة التي تهتم بها</label>
+        <select>
+          <option class="lang-en">Social Media Management</option>
+          <option class="lang-en">Paid Advertising</option>
+          <option class="lang-en">Affiliate Marketing System</option>
+          <option class="lang-en">Lead Generation Funnels</option>
+          <option class="lang-en">Full Growth Package</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="lang-en">Tell us about your business</label>
+        <label class="lang-ar">أخبرنا عن عملك</label>
+        <textarea placeholder="What does your business do, what's your main goal, and what challenges are you facing?"></textarea>
+      </div>
+      <button class="btn-submit" onclick="submitForm(this)">
+        <span class="lang-en">🚀 Book My Free Audit</span>
+        <span class="lang-ar">🚀 احجز مراجعتي المجانية</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="nav-logo" style="font-size:1.75rem">Next<span>Growth</span></div>
+      <p class="lang-en">Cairo's growth-focused marketing agency. We build systems that generate real revenue, not vanity metrics.</p>
+      <p class="lang-ar">وكالة التسويق الموجهة نحو النمو في القاهرة. نبني أنظمة تولّد إيرادات حقيقية وليس مقاييس وهمية.</p>
+      <div class="footer-socials" style="margin-top:20px">
+        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+        <a href="https://wa.me/201142070183" class="social-link" aria-label="WhatsApp">💬</a>
+        <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 class="lang-en">Services</h4>
+      <h4 class="lang-ar">الخدمات</h4>
+      <ul>
+        <li><a href="#services" class="lang-en">Social Media</a><a href="#services" class="lang-ar">التواصل الاجتماعي</a></li>
+        <li><a href="#services" class="lang-en">Paid Advertising</a><a href="#services" class="lang-ar">الإعلانات المدفوعة</a></li>
+        <li><a href="#services" class="lang-en">Affiliate Systems</a><a href="#services" class="lang-ar">أنظمة العمولة</a></li>
+        <li><a href="#services" class="lang-en">Lead Generation</a><a href="#services" class="lang-ar">توليد العملاء</a></li>
+        <li><a href="#services" class="lang-en">Branding</a><a href="#services" class="lang-ar">العلامة التجارية</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="lang-en">Company</h4>
+      <h4 class="lang-ar">الشركة</h4>
+      <ul>
+        <li><a href="#about" class="lang-en">About Us</a><a href="#about" class="lang-ar">من نحن</a></li>
+        <li><a href="#results" class="lang-en">Case Studies</a><a href="#results" class="lang-ar">دراسات الحالة</a></li>
+        <li><a href="#pricing" class="lang-en">Pricing</a><a href="#pricing" class="lang-ar">الأسعار</a></li>
+        <li><a href="#faq" class="lang-en">FAQ</a><a href="#faq" class="lang-ar">الأسئلة الشائعة</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="lang-en">Contact</h4>
+      <h4 class="lang-ar">تواصل</h4>
+      <ul>
+        <li><a href="https://wa.me/201142070183">WhatsApp</a></li>
+        <li><a href="mailto:hello@nextgrowth.agency">hello@nextgrowth.agency</a></li>
+        <li><a href="#contact" class="lang-en">Cairo, Egypt</a><a href="#contact" class="lang-ar">القاهرة، مصر</a></li>
+        <li><a href="#contact" class="lang-en">Free Audit →</a><a href="#contact" class="lang-ar">مراجعة مجانية →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="lang-en">© 2025 NextGrowth. All rights reserved. Cairo, Egypt.</p>
+    <p class="lang-ar">© 2025 NextGrowth. جميع الحقوق محفوظة. القاهرة، مصر.</p>
+    <div style="display:flex;gap:20px;align-items:center">
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')" id="footer-btn-en">EN</button>
+        <button class="lang-btn" onclick="setLang('ar')" id="footer-btn-ar">AR</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== SCROLL PROGRESS =====
+window.addEventListener('scroll', () => {
+  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  document.getElementById('scroll-progress').style.width = scrolled + '%';
+  
+  const nav = document.getElementById('navbar');
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// ===== THEME =====
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  document.getElementById('theme-icon').textContent = isDark ? '🌙' : '☀';
+}
+
+// ===== LANGUAGE =====
+function setLang(lang) {
+  const body = document.body;
+  const html = document.documentElement;
+  body.className = lang;
+  html.setAttribute('lang', lang);
+  html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  if (lang === 'en') {
+    document.getElementById('btn-en')?.classList.add('active');
+    document.getElementById('footer-btn-en')?.classList.add('active');
+  } else {
+    document.getElementById('btn-ar')?.classList.add('active');
+    document.getElementById('footer-btn-ar')?.classList.add('active');
+  }
+  
+  if (lang === 'ar') body.classList.add('ar');
+}
+
+// ===== COUNTER ANIMATION =====
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const prefix = el.dataset.prefix || '';
+  const suffix = el.dataset.suffix || '';
+  const duration = 2000;
+  const step = target / (duration / 16);
+  let current = 0;
+  
+  const update = () => {
+    current = Math.min(current + step, target);
+    el.textContent = prefix + Math.floor(current) + suffix;
+    if (current < target) requestAnimationFrame(update);
+    else el.textContent = prefix + target + suffix;
+  };
+  requestAnimationFrame(update);
+}
+
+// ===== INTERSECTION OBSERVER =====
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      
+      // Counter
+      if (entry.target.dataset.target) animateCounter(entry.target);
+      
+      // Case study bars
+      entry.target.querySelectorAll?.('.case-bar-fill').forEach(bar => {
+        setTimeout(() => { bar.style.width = bar.dataset.width; }, 300);
+      });
+      
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.reveal, [data-target], .case-card').forEach(el => io.observe(el));
+document.querySelectorAll('[data-target]').forEach(el => io.observe(el));
+
+// ===== FAQ =====
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ===== FORM SUBMIT =====
+function submitForm(btn) {
+  btn.textContent = '✅ Submitted! We\'ll contact you within 24 hours.';
+  btn.style.background = '#16a34a';
+  btn.disabled = true;
+}
+
+// ===== INIT =====
+document.body.classList.add('en');
+document.querySelectorAll('[data-target]').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
